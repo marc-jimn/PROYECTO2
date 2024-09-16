@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --padding-container: 30px 0;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #FFF;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008C 0%, #0000008C 100%), url('../img/curso.png');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+.nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-weight: 300;
+}
+
+a.links {
+    color: #FFF; 
+    text-decoration: none; 
+    border: 2px solid transparent; 
+    padding: 6px 8px;
+    border-radius: 6px; 
+    transition: all 0.3s ease;
+}
+
+a.links:hover {
+    background-color: #6F2C9E; 
+    color: #FFF; 
+    border-color: #6F2C9E; 
+}
+
+.link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.items {
+    list-style: none;
+}
+
+.contenedor_banner {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 36px;
+}
+
+.curso {
+    text-align: center;
+}
+
+.subtitulo {
+    color: #361386;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.descripcion {
+    font-size: 20px;
+}
+
+.description {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.descriptionV {
+    font-size: 20px;
+    text-align: center;
+}
+
+.curso_descripcion {
+    line-height: 1.7;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.tema {
+    color: #7a1386;
+    font-size: 26px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.subtema{
+    text-align: left;
+    font-size: 23px;
+}
+
+.slider{
+    background-color: #D6D6EE;
+    height: 250px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.slider_container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.slider_body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.slider_body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slider_img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.slider_texts{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slider_course{
+    background-color: rgb(84, 84, 177);
+    color: #FFF;
+    display: inline-block;
+    padding: 5px;
+}
+
+.slider_arrow{
+    width: 60%;
+    cursor: pointer;
+}
+
+.parrafo{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.resaltador {
+    font-weight: bold;
+    color: #6C0B57;
+}
+
+.texto_resaltador{
+    background-color: #FFF;
+    display: inline-block;
+    padding: 5px;
+}
+
+.opcion_descripcion {
+    line-height: 1.7;
+}
+
+.opciones {
+    padding-top: 40px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+.opcion_resaltador{
+    color: #FFF;
+    background-color: rgb(84, 84, 177);
+}
+
+.separador_pic{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.separador_img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+hr{
+    height: 5px;
+    background: #967aab;
+}

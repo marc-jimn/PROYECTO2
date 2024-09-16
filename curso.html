@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende PHP</title>
+    <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/curso.css">
+</head>
+
+<body>
+    <header class="banner">
+        <nav class="nav container">
+            <div>
+                <h2 class="title"><b>Aprende PHP</b></h2>
+            </div>
+
+            <ul class="link">
+                <li class="items">
+                    <a href="index.html" class="links">Inicio</a>
+                </li>
+                <li class="items">
+                    <a href="informacion.html" class="links">Información</a>
+                </li>
+                <li class="items">
+                    <a href="curso.html" class="links">Curso</a>
+                </li>
+                <li class="items">
+                    <a href="descargas.html" class="links">Descargas</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="contenedor_banner container">
+            <h1 class="titulo">¿Te interesa el desarrollo web y quieres ampliar tus habilidades?</h1>
+            <p class="descripcion">¿Quieres aprender a desarrollar aplicaciones web dinámicas y 
+                potentes?</p>
+            <p class="descripcion">¡Nuestro Curso de PHP es perfecto para ti!</p>
+        </section>
+    </header>
+
+    <main>
+        <section class="container curso">
+            <h3 class="curso_descripcion">En nuestra plataforma, te ofrecemos recursos completos 
+                para que aprendas PHP desde cero.<br>Aquí encontrarás tutoriales detallados, ejemplos 
+                prácticos y ejercicios para que puedas consolidar tus conocimientos.</h3><br><br><br>
+            <h2 class="subtitulo">Fundamentos de PHP</h2><br>
+            <h2 class="tema">Tema 1. Variables</h2>
+            <h4 class="subtema">1. Reglas para Nombrar una Variable en PHP</h4><br>
+            <p class="description">En PHP, las variables son contenedores que almacenan datos. Para 
+                nombrar una variable de manera adecuada, debemos seguir algunas reglas:</p>
+        </section>
+
+        <section class="slider">
+            <div class="slider_container container">
+                <img src="./img/arrow_left.svg" class="slider_arrow" id="before">
+
+                <section class="slider_body slider_body--show" data-id="1">
+                    <div class="slider_texts">
+                        <center><h2><span class="slider_course">Regla 1</span></h2></center><br>
+                        <p class="parrafo">El nombre de una variable debe comenzar con un signo de dólar
+                            <b class="resaltador">($)</b>, seguido por una letra o un guión bajo
+                            <b class="resaltador">(_)</b>. <span class="texto_resaltador">Por ejemplo, 
+                            <b class="resaltador">$nombre</b> o <b class="resaltador">$edad</b>
+                            son nombres de variables válidos.</span></p>
+                    </div>
+                </section>
+
+                <section class="slider_body" data-id="2">
+                    <div class="slider_texts">
+                        <center><h2><span class="slider_course">Regla 2</span></h2></center><br>
+                        <p class="parrafo">Los nombres de variables son sensibles a mayúsculas y 
+                            minúsculas, lo que significa que <b class="resaltador">$nombre</b> y
+                            <b class="resaltador">$Nombre</b> se consideran variables diferentes.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="slider_body" data-id="3">
+                    <div class="slider_texts">
+                        <center><h2><span class="slider_course">Regla 3</span></h2></center><br>
+                        <p class="parrafo"><b class="resaltador">Puedes usar letras, números y guiones 
+                            bajos</b> en el nombre de una variable, pero no se permiten espacios ni 
+                            caracteres especiales.</p>
+                    </div>
+                </section>
+
+                <section class="slider_body" data-id="4">
+                    <div class="slider_texts">
+                        <center><h2><span class="slider_course">Regla 4</span></h2></center><br>
+                        <p class="parrafo">No se pueden utilizar palabras reservadas de PHP como 
+                            nombres de variables.<br><span class="texto_resaltador">Por ejemplo,
+                            no puedes nombrar una variable <b class="resaltador">if</b> o 
+                            <b class="resaltador">echo</b>.</span></p>
+                    </div>
+                </section>
+
+                <img src="./img/arrow_right.svg" class="slider_arrow" id="next">
+            </div>
+        </section><br><br>
+
+        <section class="container curso">
+            <h4 class="subtema">2. Snake Case, Upper Camel Case y Lower Camel Case</h4><br>
+            <p class="description">En PHP, es común seguir ciertas convenciones de nomenclatura 
+                para nombrar variables. Las tres más utilizadas son:</p>
+
+                <div class="opciones">
+                    <article>
+                        <h3 class="opcion_titulo">Snake Case</h3><br>
+                        <p class="opcion_descripcion">Las palabras del identificador se separan 
+                            con guiones bajos y todas las letras se escriben en minúsculas.<br><br>
+                            Por ejemplo: <span class="opcion_resaltador">$mi_variable_importante
+                            </span></p>
+                    </article>
+        
+                    <article>
+                        <h3 class="opcion_titulo">Upper Camel Case</h3><br>
+                        <p class="opcion_descripcion">Las palabras se escriben juntas sin espacios y
+                            cada palabra comienza con una letra mayúscula.<br><br>
+                            Por ejemplo: <span class="opcion_resaltador">$MiVariableImportante
+                            </span></p>
+                    </article>
+        
+                    <article>
+                        <h3 class="opcion_titulo">Lower Camel Case</h3><br>
+                        <p class="opcion_descripcion">Similar al Upper Camel Case, pero la primera 
+                            letra de la variable comienza en minúscula.<br><br>
+                            Por ejemplo: <span class="opcion_resaltador">$miVariableImportante.
+                            </span></p>
+                    </article>
+                </div>
+        </section>
+
+        <section class="container curso">
+            <h4 class="subtema">3. Declaración de Variables en PHP</h4><br>
+            <p class="descriptionV">(ejemplo)</p><br>
+
+            <figure class="separador_pic">
+                <img src="./img/variableA.png" class="separador_img">
+            </figure>
+        </section>
+
+        <section class="container curso">
+            <h4 class="subtema">4. Concatenación de Variables</h4><br>
+            <p class="description">La concatenación de variables es la técnica de combinar 
+                múltiples valores en una cadena. En PHP, puedes concatenar variables utilizando 
+                el operador de concatenación <b>(.)</b></p><br>
+
+            <figure class="separador_pic">
+                <img src="./img/variableB.png" class="separador_img">
+            </figure>
+        </section>
+
+        <section class="container curso">
+            <h4 class="subtema">5. Interpolación de Variables</h4><br>
+            <p class="description">PHP también permite la interpolación de variables dentro de cadenas 
+                de texto delimitadas por comillas dobles.<br>
+                Esto significa que puedes insertar el valor de una variable directamente en una cadena.
+                </p><br>
+
+            <figure class="separador_pic">
+                <img src="./img/variableC.png" class="separador_img">
+            </figure><br><br>
+
+            <hr><br><br>
+
+            <iframe class="video" width="560" height="315" 
+            src="https://www.youtube.com/embed/zN-1MN2ACd8?si=9AI_KKaxDgibS-Yn" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </section>
+    </main>
+
+    <script src="./js/slider.js"></script>
+
+</body>
+</html>
